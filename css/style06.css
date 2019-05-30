@@ -129,6 +129,7 @@ h4{
 }
 	.upmenu li{
 		float:left;
+		position: relative;
 	}
 	.upmenu a{
 		display: block;
@@ -143,6 +144,26 @@ h4{
 	.upmenu a:hover{
 		border-bottom: 2.5px solid #0c9;
 	}
+	.upmenu ul{
+		display: none;
+		position: absolute;
+		z-index: 12;
+	}
+	.upmenu ul li{
+		float: none;
+		background: #DBDBDB;
+		width: 84px;
+	}
+	.upmenu ul li:hover{
+		background: #fc9;
+	}
+	.upmenu ul a{
+		margin-right: 0;
+		color:#fff;
+	}
+
+
+
 
 /*-----------banner---------------------------*/
 .banner{
