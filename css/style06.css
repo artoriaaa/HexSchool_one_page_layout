@@ -61,6 +61,10 @@ h4{
 	font-weight: bold;
 	line-height: 3.5em;
 }
+a{
+	color: #000;
+	text-decoration: none;
+}
 .clearfix{
 	clear: both;
 }
@@ -71,6 +75,18 @@ h4{
 	font-family:微軟正黑體;
 	width: 1000px;
 	margin:0 auto;
+}
+.top a{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background: url('../image/hex.svg'); #000;
+	bottom: 20px;
+	right: 20px;
+	z-index: 20;
+	border-radius: 20px;
+	background-repeat: no-repeat;
+
 }
 
 .headup{
@@ -141,18 +157,28 @@ h4{
 		padding-right:10px;
 		margin-right: 20px;
 	}
-	.upmenu a:hover{
-		border-bottom: 2.5px solid #0c9;
-	}
+		.upmenu a:hover{
+			border-bottom: 2.5px solid #0c9;
+		}
+		.upmenu a.border-none:hover{
+			border:none;
+		}
+
 	.upmenu ul{
+		border-top:2.5px solid #0c9;
 		display: none;
 		position: absolute;
 		z-index: 12;
+		margin-left: -10px;
+
 	}
 	.upmenu ul li{
 		float: none;
-		background: #DBDBDB;
-		width: 84px;
+		background: rgba(0,204,153,.7);
+		width: 96px;
+	    text-align: center;
+	    
+}
 	}
 	.upmenu ul li:hover{
 		background: #fc9;
@@ -162,6 +188,7 @@ h4{
 		color:#fff;
 	}
 
+	
 
 
 
@@ -225,6 +252,20 @@ h4{
 	-moz-box-shadow: 0 3px 2px #ddd;
 
 }
+	
+		.lb-close{
+			float: none !important; 
+			margin: 0 auto;
+			display: none !important;
+		}
+		.lb-next, .lb-prev {
+			/*width: auto !important;
+			float: none !important;
+			margin-right: -72px !important;*/
+		}
+	
+
+
 
 .pictureBox{
 	height:140px;
